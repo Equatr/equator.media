@@ -85,8 +85,3 @@ path{
 .jjonahlink:hover{
   color: orange;
 }
-
-#PopupSignupForm_0 {
-  z-index: 99999;
-  position: relative;
-}
