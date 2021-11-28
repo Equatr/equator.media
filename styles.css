@@ -23,7 +23,7 @@ font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height:99vh;
+  min-height:100vh;
 }
 
 .equator{
