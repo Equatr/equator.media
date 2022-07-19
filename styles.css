@@ -122,7 +122,11 @@ path{
 
  iframe{
   width:350px;
-  height:197px;
+  height:141px;
+}
+
+.musicVideo{
+  padding: 1em .5em;
 }
 
 .showcase{
