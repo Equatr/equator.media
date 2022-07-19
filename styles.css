@@ -11,9 +11,16 @@ h1, h2, h3, h4, p{
   color: white;
 }
 
-img{
-  vertical-align: middle;
-  padding: 5px;
+.photos{
+  display:flex;
+  width:75%;
+  margin:auto;
+  justify-content: space-around;
+}
+
+.photos > img{
+  padding: 0 5px;
+  width:25%;
 }
 
 
@@ -113,6 +120,21 @@ path{
   color: orange;
 }
 
+ iframe{
+  width:350px;
+  height:197px;
+}
+
+.showcase{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    margin:auto;
+    justify-content: space-around;
+
+}
+
+
 @media (min-width: 768px) {
   body{  flex-direction: row;}
 
@@ -122,5 +144,18 @@ path{
 
 .equatorLogo{
   padding-top: 41px; padding-bottom: 42px;
+}
+
+.showcase{
+  flex-direction: row;
+}
+
+.musicVideo, .popularTracks{
+  padding: 0 .5em;
+}
+
+iframe{
+  width:560px;
+  height:315px;
 }
 }
