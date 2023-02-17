@@ -6,8 +6,8 @@
 body{
     margin:0;
     background-color: black;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
 #blob{
@@ -47,7 +47,7 @@ body{
 }
 
 .socials-outer{
-    width:100vw;
+    width:100%;
     position: absolute;
     bottom:3rem;
 }
@@ -90,8 +90,8 @@ a{
 
 #menu-wrapper{
     color: white;
-    width:100vw;
-    height:100vh;
+    width:100%;
+    height:100%;
     /* background-color: black; */
 }
 
