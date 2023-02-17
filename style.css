@@ -49,7 +49,7 @@ body{
 .socials-outer{
     width:100vw;
     position: absolute;
-    bottom:2rem;
+    bottom:3rem;
 }
 
 .socials-inner{
@@ -62,8 +62,8 @@ body{
 }
 
 svg{
-    width:25px;
-    padding: 0 .5em;
+    width:3rem;
+    padding: 0 1.5rem;
   }
 
 .equatorsocial{
@@ -111,7 +111,7 @@ a{
 }
 
 #menu{
-    font-size: 2rem;
+    font-size: 3.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,11 +119,12 @@ a{
     left:50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    width: fit-content;
+    width: 100%;
     transition: opacity 0.5s;
 }
 
 #menu-items{
+    width:fit-content;
 }
 
 .menu-text{
@@ -133,8 +134,8 @@ a{
 }
 
 .logo{
-    width:10rem;
-    padding-bottom: 2rem;
+    width:17.5rem;
+    padding-bottom: 3rem;
 }
 
 .letter{
@@ -252,4 +253,25 @@ a{
     from{rotate: 0deg;}
     50%{scale: 1 1.5;}
     to{rotate:360deg;}
+}
+
+@media (min-width: 1008px) {
+    .logo{
+        width:10rem;
+        padding-bottom: 2rem;
+    }
+
+    #menu{
+        font-size: 2rem;
+    }
+
+    svg{
+        width:25px;
+        padding: 0 .5em;
+      }
+
+    .socials-outer{
+
+        bottom:2rem;
+    }
 }
