@@ -166,7 +166,7 @@ const split = c => {
             }
           },
           "size": {
-            "value": 3,
+            "value": 2,
             "random": true,
             "anim": {
               "enable": false,

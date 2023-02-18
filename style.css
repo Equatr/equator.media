@@ -62,7 +62,7 @@ body{
 }
 
 svg{
-    width:25px;
+    width:clamp(1rem,5vw,25px);
     padding: 0 0.5rem;
   }
 
@@ -111,7 +111,7 @@ a{
 }
 
 #menu{
-    font-size: clamp(1.5rem,6vw,2rem);
+    font-size: clamp(1.3rem,6vw,2rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,7 +134,7 @@ a{
 }
 
 .logo{
-    width:10rem;
+    width:clamp(9rem,38vw,10rem);
     padding-bottom: 2rem;
 }
 
