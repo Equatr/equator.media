@@ -195,11 +195,6 @@ a{
     padding-bottom: 2rem;
 }
 
-.bit-social-share-social-icon-wrapper{
-    left:-8rem!important;
-    top:3px!important;
-}
-
 .letter{
     display: inline-block;
     /* animation: skew-right 3s; */
@@ -317,9 +312,23 @@ a{
     to{rotate:360deg;}
 }
 
-@media (max-width: 1000px) {
-    .bit-social-share-social-icon-wrapper{
-        left:2.5rem!important;
-        top:3px!important;
+/* @media (min-width: 1008px) {
+    .logo{
+        width:10rem;
+        padding-bottom: 2rem;
     }
-}
+
+    #menu{
+        font-size: 2rem;
+    }
+
+    svg{
+        width:25px;
+        padding: 0 .5em;
+      }
+
+    .socials-outer{
+
+        bottom:2rem;
+    }
+} */
