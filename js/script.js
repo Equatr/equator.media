@@ -164,7 +164,19 @@ const switchPage = (page) => {
     const showsWrapper = document.getElementById("shows-wrapper");
     const loading = document.getElementById("loading");
 
-    document.title = "Equator Shows - Trap, Dubstep, Bass Events - Sydney DJ, AU";
+    const showsTitle = "Equator Shows - Trap, Dubstep, Bass Events - Sydney DJ, AU";
+    const showsDescription = "See upcoming shows for Australian electronic music artist Equator. EDM & bass music producer based in Sydney. Melodic dubstep, trap, future bass events.";
+    const showsURL = "https://equator.com.au/shows";
+
+    document.title = showsTitle;
+    document.querySelector('meta[property="og:title"]').setAttribute("content", showsTitle);
+    document.querySelector('meta[name="twitter:title"]').setAttribute("content", showsTitle);
+
+    document.querySelector('meta[name="description"]').setAttribute("content", showsDescription);
+    document.querySelector('meta[property="og:description"]').setAttribute("content", showsDescription);
+    document.querySelector('meta[name="twitter:description"]').setAttribute("content", showsDescription);
+
+    document.querySelector('meta[property="og:url"]').setAttribute("content", showsURL);
 
     menu.style.opacity = "0";
     socials.style.opacity = "0";
@@ -186,7 +198,19 @@ const switchPage = (page) => {
     const socials = document.getElementsByClassName("socials-outer")[0];
     const loading = document.getElementById("loading");
 
-    document.title = "Equator - Electronic Music Artist - EDM & Bass - Sydney, Australia";
+    const menuTitle = "Equator - Electronic Music Artist - EDM & Bass - Sydney, Australia";
+    const menuDescription = "Australian electronic music artist. EDM & bass music producer and DJ based in Sydney. Melodic dubstep, trap, future bass, remixes. Listen now. aka jjonah";
+    const menuURL = "https://equator.com.au";
+
+    document.title = menuTitle;
+    document.querySelector('meta[property="og:title"]').setAttribute("content", menuTitle);
+    document.querySelector('meta[name="twitter:title"]').setAttribute("content", menuTitle);
+
+    document.querySelector('meta[name="description"]').setAttribute("content", menuDescription);
+    document.querySelector('meta[property="og:description"]').setAttribute("content", menuDescription);
+    document.querySelector('meta[name="twitter:description"]').setAttribute("content", menuDescription);
+
+    document.querySelector('meta[property="og:url"]').setAttribute("content", menuURL);
 
     showsWrapper.style.opacity = "0";
     loading.style.opacity = "0";
