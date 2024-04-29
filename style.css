@@ -166,6 +166,10 @@ a{
     transition: opacity 500ms;
 }
 
+.fa-ticket-alt{
+    margin:0!important;
+}
+
 .fa-ticket-alt > path{
     fill:black!important;
 }
