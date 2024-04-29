@@ -142,13 +142,13 @@ window.addEventListener("popstate", (e) => {
 const switchPage = (page) => {
   switch (page) {
     case "menu":
-      history.pushState({ page: page }, document.title, location.pathname);
+      history.pushState({ page: page }, "Equator - Electronic Music Artist - EDM & Bass - Sydney, Australia", location.pathname);
       showMenu();
       break;
     
     case "shows":
       showShows();
-      history.pushState({ page: page }, document.title, "#shows");
+      history.pushState({ page: page }, "Equator Shows - Trap, Dubstep, Bass Events - Sydney DJ, AU", "#shows");
       
       break;
   
