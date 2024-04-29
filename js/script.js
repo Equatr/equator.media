@@ -140,14 +140,15 @@ window.addEventListener("popstate", (e) => {
 });
 
 const switchPage = (page) => {
-  history.pushState({ page: page }, document.title, "");
   switch (page) {
     case "menu":
+      history.pushState({ page: page }, document.title, location.pathname);
       showMenu();
       break;
     
     case "shows":
       showShows();
+      history.pushState({ page: page }, document.title, "#shows");
       
       break;
   
@@ -161,9 +162,11 @@ const switchPage = (page) => {
     const menu = document.getElementById("menu");
     const socials = document.getElementsByClassName("socials-outer")[0];
     const showsWrapper = document.getElementById("shows-wrapper");
+    const loading = document.getElementById("loading");
 
     menu.style.opacity = "0";
     socials.style.opacity = "0";
+    loading.style.opacity = "0";
     
     setTimeout(()=>{
       menu.style.display = "none"; 
@@ -179,8 +182,10 @@ const switchPage = (page) => {
     const menu = document.getElementById("menu");
     const showsWrapper = document.getElementById("shows-wrapper");
     const socials = document.getElementsByClassName("socials-outer")[0];
+    const loading = document.getElementById("loading");
 
     showsWrapper.style.opacity = "0";
+    loading.style.opacity = "0";
     setTimeout(()=>{
       showsWrapper.style.display = "none"; 
       socials.style.display = "block";
@@ -197,6 +202,17 @@ const switchPage = (page) => {
       const showsWrapper = document.getElementsByClassName("bit-widget")[0];
       showsWrapper.classList.remove('bit-layout-ipad');
       showsWrapper.classList.add('bit-layout-desktop');
+    }
+
+    console.log(window.location.hash);
+    switch (window.location.hash) {
+      case "#shows":
+        showShows();
+        break;
+    
+      default:
+        showMenu();
+        break;
     }
     
     split("menu-text");
