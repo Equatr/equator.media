@@ -121,6 +121,41 @@ const split = c => {
     console.log("set")
   }
 
+window.addEventListener("popstate", (e) => {
+    if(e.state){
+        switch (e.state.page) {
+          case "menu":
+            showMenu();
+            break;
+          
+          case "shows":
+            showShows();
+            
+            break;
+        
+          default:
+            break;
+        }
+    }
+});
+
+const switchPage = (page) => {
+  history.pushState({ page: page }, document.title, "");
+  switch (page) {
+    case "menu":
+      showMenu();
+      break;
+    
+    case "shows":
+      showShows();
+      
+      break;
+  
+    default:
+      break;
+  }
+}
+
   const showShows = () => {
     const showsMenuItem = document.getElementById("shows-menu-item");
     const menu = document.getElementById("menu");
