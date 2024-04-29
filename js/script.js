@@ -120,8 +120,50 @@ const split = c => {
     },500);
     console.log("set")
   }
+
+  const showShows = () => {
+    const showsMenuItem = document.getElementById("shows-menu-item");
+    const menu = document.getElementById("menu");
+    const socials = document.getElementsByClassName("socials-outer")[0];
+    const showsWrapper = document.getElementById("shows-wrapper");
+
+    menu.style.opacity = "0";
+    socials.style.opacity = "0";
+    
+    setTimeout(()=>{
+      menu.style.display = "none"; 
+      socials.style.display = "none";
+      showsWrapper.style.display = "flex";
+      setTimeout(()=>{showsWrapper.style.opacity = "1";},0);
+      
+    },500);
+    console.log("set")
+  }
+
+  const showMenu = () => {
+    const menu = document.getElementById("menu");
+    const showsWrapper = document.getElementById("shows-wrapper");
+    const socials = document.getElementsByClassName("socials-outer")[0];
+
+    showsWrapper.style.opacity = "0";
+    setTimeout(()=>{
+      showsWrapper.style.display = "none"; 
+      socials.style.display = "block";
+      menu.style.display = "flex";
+      setTimeout(()=>{menu.style.opacity = "1";},0);
+      setTimeout(()=>{socials.style.opacity = "1";},0);
+      
+    },500);
+    console.log("set")
+  }
   
   window.onload = () =>{
+    if(window.innerWidth >= 1000){
+      const showsWrapper = document.getElementsByClassName("bit-widget")[0];
+      showsWrapper.classList.remove('bit-layout-ipad');
+      showsWrapper.classList.add('bit-layout-desktop');
+    }
+    
     split("menu-text");
     offsetByX("letter");
 

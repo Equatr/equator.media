@@ -50,6 +50,7 @@ body{
     width:100%;
     position: absolute;
     bottom:2rem;
+    transition: opacity 0.5s;
 }
 
 .socials-inner{
@@ -109,6 +110,43 @@ a{
     position: absolute;
     width: fit-content;
     transition: opacity 0.5s;
+}
+
+.back-text{
+    color:white;
+    cursor: pointer;
+    display: inline;
+}
+
+#shows-container{
+    margin:auto;
+    width:90%;
+}
+
+#shows-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#shows-top :nth-child(n){
+    width:clamp(9rem,38vw,10rem);
+}
+
+#shows-wrapper{
+    /* top:50%;
+    left:50%;
+    transform: translate(-50%, 50%); */
+    /* position: relative; */
+    /* margin:auto;
+    margin-top:1rem; */
+    display:none;
+    width:100%;
+    height:100vh;
+    opacity: 0;
+    transition: opacity 500ms;
 }
 
 #menu{
