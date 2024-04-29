@@ -166,6 +166,10 @@ a{
     transition: opacity 500ms;
 }
 
+.fa-ticket-alt > path{
+    fill:black!important;
+}
+
 #menu{
     font-size: clamp(1.3rem,4vw,2rem);
     display: none;
