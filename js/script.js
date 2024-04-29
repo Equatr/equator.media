@@ -164,6 +164,8 @@ const switchPage = (page) => {
     const showsWrapper = document.getElementById("shows-wrapper");
     const loading = document.getElementById("loading");
 
+    document.title = "Equator Shows - Trap, Dubstep, Bass Events - Sydney DJ, AU";
+
     menu.style.opacity = "0";
     socials.style.opacity = "0";
     loading.style.opacity = "0";
@@ -183,6 +185,8 @@ const switchPage = (page) => {
     const showsWrapper = document.getElementById("shows-wrapper");
     const socials = document.getElementsByClassName("socials-outer")[0];
     const loading = document.getElementById("loading");
+
+    document.title = "Equator - Electronic Music Artist - EDM & Bass - Sydney, Australia";
 
     showsWrapper.style.opacity = "0";
     loading.style.opacity = "0";
