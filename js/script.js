@@ -165,7 +165,7 @@ const switchPage = (page) => {
     const loading = document.getElementById("loading");
 
     const showsTitle = "Equator Shows - Trap, Dubstep, Bass Events - Sydney DJ, AU";
-    const showsDescription = "See upcoming shows for Australian electronic music artist Equator. EDM & bass music producer based in Sydney. Melodic dubstep, trap, future bass events.";
+    const showsDescription = "See upcoming concerts for Australian electronic music artist Equator. EDM & bass gigs - producer based in Sydney. Melodic dubstep, trap, future bass events.";
     const showsURL = "https://equator.com.au/shows";
 
     document.title = showsTitle;
