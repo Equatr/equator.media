@@ -129,6 +129,10 @@ a{
     transition: opacity 0.5s;
 }
 
+.logo-link{
+    height: fit-content;
+}
+
 .back-text{
     color:white;
     cursor: pointer;

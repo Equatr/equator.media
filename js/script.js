@@ -118,7 +118,6 @@ const split = c => {
       setTimeout(()=>{aboutWrapper.style.opacity = "1";},0);
       
     },500);
-    console.log("set")
   }
 
 window.addEventListener("popstate", (e) => {
@@ -189,7 +188,6 @@ const switchPage = (page) => {
       setTimeout(()=>{showsWrapper.style.opacity = "1";},0);
       
     },500);
-    console.log("set")
   }
 
   const showMenu = () => {
@@ -222,7 +220,6 @@ const switchPage = (page) => {
       setTimeout(()=>{socials.style.opacity = "1";},0);
       
     },500);
-    console.log("set")
   }
   
   window.onload = () =>{
@@ -232,7 +229,6 @@ const switchPage = (page) => {
       showsWrapper.classList.add('bit-layout-desktop');
     }
 
-    console.log(window.location.hash);
     switch (window.location.hash) {
       case "#shows":
         showShows();
@@ -485,4 +481,19 @@ const switchPage = (page) => {
     })();
 
     updateParticleOpacity();
+
+    document.getElementById('shows-menu-item').onclick = function(e){
+      e.preventDefault();
+      switchPage('shows');
+    }
+    
+    let backLinks = [...document.getElementsByClassName('back-text')].concat([...document.getElementsByClassName('logo-link')]);
+
+    for(var i = 0; i < backLinks.length; i++){
+      let el = backLinks[i];
+      el.onclick = function(e){
+        e.preventDefault();
+        switchPage('menu');
+      }
+    }
   }
