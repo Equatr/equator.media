@@ -68,15 +68,19 @@ body{
     bottom:2rem;
     opacity: 0;
     transition: opacity 0.5s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .socials-inner{
   display:flex;
   align-items: center;
   justify-content: space-evenly;
-  width:50%;
+  width:fit-content;
+  min-width: 50%;
   position: relative;
-  margin:auto;
+  /* margin:auto; */
 }
 
 svg{

@@ -214,7 +214,7 @@ const switchPage = (page) => {
     loading.style.opacity = "0";
     setTimeout(()=>{
       showsWrapper.style.display = "none"; 
-      socials.style.display = "block";
+      socials.style.display = "flex";
       menu.style.display = "flex";
       setTimeout(()=>{menu.style.opacity = "1";},0);
       setTimeout(()=>{socials.style.opacity = "1";},0);
